@@ -3,101 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <style>
-        section{margin: 20px;
-        padding: 20px;
-        text-align: left;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-        section h5{text-align: right;}
-       
-
-
-        header{text-align: center;
-        background-color:rgba(226, 43, 67, 0.351);
-        padding: 5px;
-        }
-        header hr{margin:0;
-        border:solid;}
-        
-        img {border-radius: 50%;}
-    </style>
+    <title>Assignment 2</title>
+   
 </head>
 <body>
-    <header>
-     <img style= float:left; src="images/photo.jpeg" alt="profile photo" width="100px" height="100px" >
-        <h1>Harsh Rajendra Mankar</h1>
-        <hr>
-    </header>
-    <section class="education">
-        <h1>Education</h1>
-        <UL>
-            <li><p>Yeshwantrao Chavan College Of Engineering, Maharashtra, India</p></li>
-             <h5>  july 2019-august 2023</h5>
-             <li><p>New Jersey Institute Of Technology, New Jersey, USA</p></li>
-        </ul>    
-        <h5>  sept 2023-august 2025</h5>    
-    </section>
-   <section class="work experience" >
-        <h1>Work Experience </h1>
-        <h3>Persistent Systems</h3><h5>Feb 2023-april 2023</h5><h4>Intern</h4>
-        <ul>
-            <li> <p> Developed a bot devised to help plan a tour including the flights to take, the hotels to stay at and the tourist places to
-            visit in the destination city within available budget by using openpyxl library.</p></li>
-        </ul>
+  <h1>Assignment 2</h1>
+  <style>body {background-color: black;text-align: center;color: bisque;}</style>
+    <div class="reversestring">
+        <h1>1] reversing input string</h1>
+        <input type="text" id="input" placeholder="type here"><br>
+        <button onclick="reverse()">Reverse</button>
+        <p id="reversed"></p><br><br><br>
+    </div>
 
-        <h3>Bliinc Innovations</h3> <h5>Jan 2023-july 2023</h5><h4>Intern</h4>
-        <ul>
-            <li><p> Collaborated with Nagpur Municipal Corporation to develop an outsourced outdoor hoardings booking portal, facilitating
-        citizen access. The project included an Admin section for comprehensive hoarding management and a citizen portal for
-        monthly bookings with online payment capabilities. Implemented key modules throughout such as UI design, database
-        structure design, hoarding management, and SMS integration, worked on Admin dashboard, report generation, and
-        ensured seamless database functionality.</p></li>
-        </ul>
-       
-    </section>
-    <section>
-        <h1>Projects</h1>
-        <h4>Saline Water Monitoring system</h4>
-        <ul>
-            <li><p>Created saline water level monitoring system by use of IOT and connected it with cloud to notify the users the amount
-             of solution left in bottle.</p></li>
-        </ul>
-    
-        <h4>Development of Open Source Libraries For Arduino and STM32</h4>
-        <ul><li><p>Developed libraries of STM-32 microcontroller to ease the use of STM-32 microcontroller substituting Arduino and
-            uploaded to opensource platform(github) for easy access.</p></li>
-        </ul>
-     </section>
-     <section>
-        <h1>Skills</h1>
-        <h3>Technical</h3>
-        <ul>
-            <li><p>Python programming, SQL,pandas, JavaScript, HTML, CSS, OOPS, Microsoft Excel,
-                Microsoft Powerpoint ,Python programming, SQL,pandas, JavaScript, HTML, CSS, OOPS, Microsoft Excel,
-            Microsoft Powerpoint</p></li>
-        </ul>
-        <h3>Non-Technical</h3>
-        <p><ul><li>: Leadership, Team Player, Hardworking, Motivated.</li></ul></p>
-     </section>
-     <section>
-        <h1>Awards</h1>
-        <ul>
-            <li><p>SQL course certified by udemy</p></li>
-            <li><p>Java course certified by udemy</p></li>
-        </ul>
-     </section>
-     <footer>
-        <h1>Contact</h1>
-        <ul>
-         <li> <p><a href="hm546@njit.edu">email id</a></p></li>
-         <li><p>Phone:9737049839</p></li>
-         <li><p><a href="www.linkedin.com/in/harsh-mankar-34ba2b220">LinkedIn</a></p></li>
-         <li><p><a href="https://github.com/hmankar01">Github</a</p></li>
-        </ul>
-     </footer>
-     
-     
-    
+
+    <div class="palindrome">
+      <h1>2] if palindrome or not</h1>
+      <input type="text" id="inputstr" placeholder="Enter here to Check if palindrome"><br>
+      <button onclick="ifPalindrome()">clickme</button>
+      <p id="palindromeresult"></p><br><br><br>
+  </div>
+
+
+  <div class="tipcalculator">
+    <h1>3]tip + subtotal</h1>
+    <label for="billtotal">Subtotal: </label>
+    <input type="number" id="billtotal" placeholder="only bill amount"><br><br>
+    <label for="tipPercentage">tip you would like to give: </label>
+    <input type="number" id="tipPercentage" placeholder="Enter tip percentage"><br><br>
+    <button onclick="subtotal()">overall bill</button>
+    <p id="totalAmount"></p>
+</div>
+  <script src="index.js"></script>
 </body>
 </html>
